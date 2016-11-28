@@ -1,5 +1,5 @@
 flight_codes:
   arrival: ~randomize (['LGA','PDX','PIT'])
   departure: ~randomize (['DFW','CMH','MIA'])
-  leaving_date: November 30
-  return_date: December 3
+  leaving_date: November 28
+  return_date: December 2
