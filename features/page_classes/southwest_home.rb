@@ -9,13 +9,13 @@ class SouthwestHome
 
 	text_field(:arrival, id: 'air-city-arrival')
 	text_field(:departure, id: 'air-city-departure')
-	text_field(:departure_date, id: 'air-date-departure')
+	text_field(:leaving_date, id: 'air-date-departure')
 	text_field(:return_date, id: 'air-date-return')
-	button(:search, id: 'jb-booking-form-submit-button')
+	button(:search_flights, id: 'jb-booking-form-submit-button')
 
-	def get_flights
+	def insert_sample_flight
 		populate_page_with data_for :flight_codes
-		self.search
+		self.search_flights
 	end
 
 end
