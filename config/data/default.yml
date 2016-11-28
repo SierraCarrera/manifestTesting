@@ -1,0 +1,5 @@
+flight_codes:
+  arrival: ~randomize['LGA','PDX','PIT']
+  departure: ~randomize['MGA','CMH','SJU']
+  departure_date: 11/29
+  return_date: 12/05
