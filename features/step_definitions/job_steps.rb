@@ -13,7 +13,7 @@ Then(/^only Columbus opportunities are present$/) do
 	on_page(ManifestJobs) do |page|
 		cityResults = @browser.divs(class: 'opp-loc')
 		cityResults.each do |location|
-			expect(location.text).to include 'Columbus, OH'
+			expect(location.text).to eq 'Columbus, OH'
 		end	
 	end
 end
@@ -29,7 +29,7 @@ Then(/^only contract opportunities are present$/) do
 	on_page(ManifestJobs) do |page|
 		typeResults = @browser.divs(class: 'opp-type')
 		typeResults.each do |type|
-			expect(type.text).to include 'Contract'
+			expect(type.text).to eq 'Contract'
 		end
 	end
 end

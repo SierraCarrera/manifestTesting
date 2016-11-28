@@ -18,7 +18,7 @@ class SouthwestFlights
 	end
 
 	def past_departure
-		self.disabled
+		self.disabled[4]
 	end
 
 end
